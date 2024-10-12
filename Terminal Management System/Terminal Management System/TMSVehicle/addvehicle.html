@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vehicle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="addvehicle.php" method="post">
+        <label for="vehicleType">Vehicle Type:</label>
+        <select id="vehicleType" name="vehicleType" required>
+            <option value="Dulog">Dulog</option>
+            <option value="Van">Van</option>
+            <option value="Bus">Bus</option>
+            <option value="Motorcycle">Motorcycle</option>
+            <option value="Jeepney">Jeepney</option>
+        </select>
+
+        <label for="plateNumber">Plate Number:</label>
+        <input type="text" id="plateNumber" name="plateNumber" required>
+
+        <label for="vehicleColor">Vehicle Color:</label>
+        <input type="text" id="vehicleColor" name="vehicleColor" required>
+
+        <label for="vehiclecapacity">Vehicle Capacity:</label>
+        <input type="text" id="vehiclecapacity" name="vehiclecapacity" required>
+
+        <label for="vehicleDestination">Vehicle Destination:</label>
+        <input type="text" id="vehicleDestination" name="vehicleDestination" required>
+
+        <label for="driverName">Driver Name:</label>
+        <input type="text" id="driverName" name="driverName" required>
+
+        <label for="driverlastname">Driver Last Name:</label>
+        <input type="text" id="driverlastname" name="driverlastname" required>
+
+        <button type="submit">Add Vehicle</button>
+    </form>
+</body>
+</html>
